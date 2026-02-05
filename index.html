@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Clash of Tabriz</title>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      background: rgba(0, 0, 0, 0.70);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    header{
+      width: 100%;
+      height: 10vh;
+      box-shadow: 0 0 1vh #000 ;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 2vh;
+      
+    }
+
+    nav{
+      width: calc(100% - 2vh);
+      background: #fff;
+      border-radius: 10vh;
+      box-shadow: 0 0 10vh #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      bottom:0px;
+    }
+    nav ul{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      width: 100%;
+    }
+    nav li{
+      height: 10vh;
+    }
+    nav a{
+      height: 100%;
+      padding: 0 4vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 1.25vh;
+      color:#000;
+    }
+    .icon{
+      width: 4vh;
+      height: 4vh;
+    }
+    nav a:hover{
+      box-shadow: 0 0 1vh #000;
+      border-radius: 1vh;
+      color:#fff;
+      background: rgba(0,0,0,0.80);
+    }
+
+    /* کلاس‌های اختصاصی برای رنگ آیکون‌ها */
+    nav li:first-of-type .icon,
+    nav ul li:nth-child(2) a .icon,
+    nav ul li:nth-child(4) a .icon,
+    nav ul li:nth-child(5) a .icon {
+      color: rgba(0,0,0,0.40);
+      width: 3vh;
+      height: 3vh;
+    }
+
+    nav li:first-of-type .icon:hover,
+    nav ul li:nth-child(2) a:hover .icon,
+    nav ul li:nth-child(4) a:hover .icon,
+    nav ul li:nth-child(5) a:hover .icon{
+      color:red;
+    }
+
+    /* استایل SVG متن هدر */
+    .title {
+      font-family: 'Alex Brush', cursive;
+      font-size: 5vh;
+      fill: url(#iceGradient);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <svg width="100%" height="10vh" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="iceGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:#ccefff;stop-opacity:1" />
+          <stop offset="100%" style="stop-color:#0066cc;stop-opacity:1" />
+        </linearGradient>
+      </defs>
+      <text x="50%" y="75%" text-anchor="middle" class="title">
+        Clash of Tabriz
+      </text>
+    </svg>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icon" viewBox="0 0 16 16">
+          <path d="M12.643 15C13.979 15 15 13.845 15 12.5V5H1v7.5C1 13.845 2.021 15 3.357 15zM5.5 7h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1M.8 1a.8.8 0 0 0-.8.8V3a.8.8 0 0 0 .8.8h14.4A.8.8 0 0 0 16 3V1.8a.8.8 0 0 0-.8-.8z"/>
+        </svg>
+        <br/><span>Folder</span>
+      </a></li>
+      <li><a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icon" viewBox="0 0 16 16">
+          <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+        </svg>
+        <br/><span>Home</span>
+      </a></li>
+      <li><a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icon" viewBox="0 0 16 16">
+          <path d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5z"/>
+        </svg>
+        <br/><span>Page</span>
+      </a></li>
+      <li><a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icon" viewBox="0 0 16 16">
+          <path d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1z"/>
+          <path d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729q.211.136.373.297c.408.408.78 1.05 1.095 1.772.32.733.599 1.591.805 2.466s.34 1.78.364 2.606c.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527s-2.496.723-3.224 1.527c-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772a2.3 2.3 0 0 1 .433-.335l-.028-.079z"/>
+        </svg>
+        <br/><span>Games</span>
+      </a></li>
+      <li><a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icon" viewBox="0 0 16 16">
+          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+          <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+        </svg>
+        <br/><span>Login</span>
+      </a></li>
+    </ul>
+  </nav>
+
+</body>
+</html>
